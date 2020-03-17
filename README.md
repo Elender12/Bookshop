@@ -1,2 +1,5 @@
-# Bookshop
-Modulo 3
+# Ecommerce Bookshop
+
+JPA & JSF
+
+E & P
