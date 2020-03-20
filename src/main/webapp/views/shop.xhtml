@@ -5,38 +5,43 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <link href="../CSS/styles_main.css" rel="stylesheet" type="text/css"/> 
-        <title>Facelet Title</title>
+        <title>EBooks</title>
     </h:head>
     <h:body>
         <header>
-            <h2>Pagina de compra-venta de libros totalmente legales</h2>
+            <h1 class="titulo">Pagina de compra-venta de libros totalmente legales</h1>
         </header>
         <nav>
-            <ul>    
-                <li><h:form><h:commandButton  action="#{login2.logout}" value="Invoice"/></h:form> </li>
-                <li><h:form><h:commandButton  action="#{login2.logout}" value="Log Out"/></h:form> </li>
-                <li><h:form><h:commandButton class="button-nav" action="#{login2.logout}" value="Carrito"/></h:form></li>
+            <ul>
+                <li><h:outputLabel value="Welcome user #{login2.name} | "></h:outputLabel></li>
+                <li><h:form><h:commandButton class="button-nav" action="#{login2.logout}" value="Log Out"/></h:form> </li>
+                <li><h:form><h:commandButton class="button-nav" action="#{login2.logout}" value="Invoice"/></h:form> </li>
+                <li><h:form><h:commandButton class="button-nav" action="#{login2.logout}" value="Carrito"/></h:form> </li>
             </ul>
         </nav>
+
         <section>
+            
             <h:dataTable
+                columnClasses="col"
                 rowClasses="yoquese"
-                style="padding: 50px; width: 100%"
+                style="padding: 50px; width: 100%;"
                 value="#{productsBean.getProducts()}" var="book">
-                <h:column>
-                    <h:outputLabel class="titulo">TITULO - #{book.title}</h:outputLabel>
-                    <br></br>
-                    <h:graphicImage id="mapImage" url="../images/#{book.isbn}.jpg" width="330px" height="500px" alt="hey libro"/>
-                    <br></br>
-                    Author: #{book.author}
-                    <br></br>
-                    <h:outputLabel class="price">Price: #{book.price}</h:outputLabel>
-                    <br></br>
-                    <h:button class="button" value="Add to cart"/>
-                    <h:button class="button" outcome="info" value="+ Info"/>
-                    <br></br><br></br><br></br>
-                </h:column>
+           
+                    <h:column>
+                            <h:outputLabel class="titulo-libro">#{book.title}</h:outputLabel>
+                            <br></br>
+                            <h:graphicImage id="mapImage" url="../images/#{book.isbn}.jpg" width="330px" height="500px" alt="libro #{book.isbn}"/>
+                            <br></br>
+                            Author: #{book.author}
+                            <br></br>
+                            <h:outputLabel class="price">Price: #{book.price} €</h:outputLabel>
+                            <br></br>
+                            <h:button class="button" value="Add to cart"/>
+                            <h:button class="button" outcome="info" value="+ Info"/>
+                    </h:column>
             </h:dataTable>
+
         </section>
         <footer>
             footer

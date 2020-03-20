@@ -1,12 +1,16 @@
-header{width: 100%; border: 1px solid #2aadee; background-color: #2aadee; text-align: center;}
+
+header{width: 100%; border: 1px solid #0f1620; background-color: #0f1620; text-align: center;}
 ul{list-style: none;}
 ul li{display: inline-block; padding: 10px; width: auto;}
-nav{border: 1px solid #56baed; background-color: #56baed; width: 100%;}
-section{border: 2px solid #56baed; width: 100%;}
-footer{clear: both;}
-.card {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);max-width: 200px;margin: auto;text-align: center;font-family: arial; display: inline-block; margin: 10px;}
+nav{background-color: white; width: 100%; height: auto}
+section{border: 2px solid black; width: 100%; background-image: url(../images/imagen_wai.jpg);background-repeat: no-repeat; background-attachment: fixed;}
+footer{clear: both; width: 100%; background-color: #0f1620}
 .price {color: grey;font-size: 18px;}
-.button {border: none;outline: 0;padding: 12px;color: white;background-color: #000;text-align: center;cursor: pointer;width: 50%;font-size: 13px;}
-.card button:hover {opacity: 0.7;}
-.titulo{font-size: 20px; color: black;}
-.yoquese{display: inline-block; border: 2px solid black;}
+.button-nav{border: none;outline: 0;padding: 12px;color: white;background-color: #0f1620;text-align: center;cursor: pointer;width: auto;font-size: 13px;}
+.button-nav:hover {opacity: 0.7; padding: 13px}
+.button {outline: 0; padding: 12px ;color: white;background-color: #0f1620;text-align: center;cursor: pointer;width: 50%;font-size: 13px;}
+.button:hover {opacity: 0.7;}
+.titulo{color: white;}
+.titulo-libro{font-size: 25px; font-weight: bold;}
+.yoquese{display: inline-block; border: 2px solid black; margin: 47px; background-color: white; opacity: 0.8;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2, 1)}
+.yoquese:hover{opacity: 1}
