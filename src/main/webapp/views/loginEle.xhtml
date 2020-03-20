@@ -1,0 +1,24 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+		<h3>Login</h3>
+                <h:form>
+                 <h:outputText value="Username" />
+		<h:inputText id="username" value="#{login2.user}"></h:inputText>
+		<h:message for="username"></h:message>
+		<br></br><br></br>
+		<h:outputText value="Password" />
+		<h:inputSecret id="password" value="#{login2.pwd}"></h:inputSecret>
+		<h:message for="password"></h:message>
+                <br></br><br></br>
+		<h:commandButton action="#{login2.validateUsernamePassword}"
+			value="Login"></h:commandButton>
+                </h:form>
+    </h:body>
+</html>
+

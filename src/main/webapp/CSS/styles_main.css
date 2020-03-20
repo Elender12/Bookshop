@@ -1,0 +1,12 @@
+header{width: 100%; border: 1px solid #2aadee; background-color: #2aadee; text-align: center;}
+ul{list-style: none;}
+ul li{display: inline-block; padding: 10px; width: auto;}
+nav{border: 1px solid #56baed; background-color: #56baed; width: 100%;}
+section{border: 2px solid #56baed; width: 100%;}
+footer{clear: both;}
+.card {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);max-width: 200px;margin: auto;text-align: center;font-family: arial; display: inline-block; margin: 10px;}
+.price {color: grey;font-size: 18px;}
+.button {border: none;outline: 0;padding: 12px;color: white;background-color: #000;text-align: center;cursor: pointer;width: 50%;font-size: 13px;}
+.card button:hover {opacity: 0.7;}
+.titulo{font-size: 20px; color: black;}
+.yoquese{display: inline-block; border: 2px solid black;}

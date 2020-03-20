@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>libros</title>
+        <link href="../CSS/styles_login.css" rel="stylesheet" type="text/css"/> 
+    </h:head>
+    <h:body>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
+                <h2 class="active"> Sign In </h2>
+                <h2 class="inactive underlineHover">Sign Up </h2>
+
+                <!-- Icon -->
+                <div class="fadeIn first">
+                    <img src="../images/owl_logo.jpg" id="icon" alt="User Icon" styles="width: 20px; height: 20px" />
+                </div>
+
+                <!-- Login Form -->
+                <h:form>
+                    <h:inputText  value="#{login2.user}" id="login" class="fadeIn second" h:name="login" h:placeholder="login"/>
+                    <h:inputText  value="#{login2.pwd}" class="fadeIn third" h:name="login" h:placeholder="password"/>
+                    <h:commandButton class="fadeIn fourth" action="#{login2.validateUsernamePassword}" value="Log In"/>            
+                </h:form>
+
+                <!-- Remind Passowrd -->
+                <div id="formFooter">
+                    <a class="underlineHover" href="#">Forgot Password?</a>
+                </div>
+
+            </div>
+        </div>
+    </h:body>
+</html>
